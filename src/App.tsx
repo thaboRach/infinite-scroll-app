@@ -1,7 +1,7 @@
 import React, { useRef, useCallback } from 'react';
 import { useInfiniteQuery } from '@tanstack/react-query';
 
-import { Card, Spinner } from './components';
+import { Card, ScrollToTop, Spinner } from './components';
 import { fetchPosts } from './queries';
 
 function App() {
@@ -77,6 +77,8 @@ function App() {
         {error && <p className="text-center text-red-500 py-4">{error.message}</p>}
 
       </div>
+
+      <ScrollToTop />
     </main>
   );
 }
