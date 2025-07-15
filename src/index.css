@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@layer components {
+    .horizontal {
+        @apply flex flex-row;
+    }
+
+    .vertical {
+        @apply flex flex-col;
+    }
+
+    .center-v {
+        @apply justify-center;
+    }
+
+    .center-h {
+        @apply items-center;
+    }
+}
